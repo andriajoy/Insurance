@@ -1,0 +1,106 @@
+﻿@model InsuranceDBfirst.Policy
+
+@{
+    ViewBag.Title = "ShowPolicies";
+}
+
+<h2>ShowPolicies</h2>
+
+<div>
+    <h4>Policy</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PolicyNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PolicyNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PlanNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlanNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InstallmentPremium)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InstallmentPremium)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Insured)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Insured)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SumAssured)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SumAssured)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PolicyStatus)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PolicyStatus)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PremiumMode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PremiumMode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PremiumDueDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PremiumDueDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Beneficiary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Beneficiary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Owner)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Owner)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PolicyTerm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PolicyTerm)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
